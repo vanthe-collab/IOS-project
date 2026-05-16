@@ -29,7 +29,8 @@ class AddTransactionViewController: UIViewController {
     var transactionEdit : Transaction?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupCategoryMenu()
+        setupHideKeyBoard()
         //Sửa giao dịch
         if let editItem = transactionEdit{
             lblHeader.text = "Sửa giao dịch"
@@ -105,6 +106,16 @@ class AddTransactionViewController: UIViewController {
         }
         let menu = UIMenu(title: "Chọn Danh Mục", children: [actionFood, actionSalary, actionTransport, actionOther])
         btnCategory.menu = menu
+    }
+    //MARK: Ẩn bàn phím
+    func setupHideKeyBoard(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismisssKeyBoard))
+        //nếu muốn khi nhấn button khác để tắt bàn phím và button đó ăn luôn thì mở ở dưới
+        //tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismisssKeyBoard(){
+        view.endEditing(true)
     }
     /*
     // MARK: - Navigation
