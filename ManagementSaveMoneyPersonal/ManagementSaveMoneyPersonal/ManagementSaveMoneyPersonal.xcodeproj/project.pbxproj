@@ -13,6 +13,9 @@
 		D01B08FC2FAEB61600B09649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01B08FA2FAEB61600B09649 /* Main.storyboard */; };
 		D01B08FE2FAEB63100B09649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01B08FD2FAEB63100B09649 /* Assets.xcassets */; };
 		D01B09012FAEB63100B09649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01B08FF2FAEB63100B09649 /* LaunchScreen.storyboard */; };
+		D034B00C2FB5F0C500E0B996 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034B00B2FB5F0C500E0B996 /* TransactionTableViewCell.swift */; };
+		D083CDA22FB4B774008F7ED0 /* DataTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083CDA12FB4B774008F7ED0 /* DataTransaction.swift */; };
+		D08981D52FB7FCC00062418D /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08981D42FB7FCC00062418D /* AddTransactionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		D01B08FD2FAEB63100B09649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D01B09002FAEB63100B09649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D01B09022FAEB63100B09649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D034B00B2FB5F0C500E0B996 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		D083CDA12FB4B774008F7ED0 /* DataTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransaction.swift; sourceTree = "<group>"; };
+		D08981D42FB7FCC00062418D /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			children = (
 				D01B09092FAEB85500B09649 /* controllers */,
 				D01B08FA2FAEB61600B09649 /* Main.storyboard */,
+				D083CDA02FB4B6A8008F7ED0 /* models */,
+				D034B00A2FB5F07200E0B996 /* cutomsTableView */,
 				D01B09082FAEB68900B09649 /* systems */,
 			);
 			path = ManagementSaveMoneyPersonal;
@@ -78,9 +86,26 @@
 		D01B09092FAEB85500B09649 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D08981D42FB7FCC00062418D /* AddTransactionViewController.swift */,
 				D01B08F82FAEB61600B09649 /* ViewController.swift */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		D034B00A2FB5F07200E0B996 /* cutomsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D034B00B2FB5F0C500E0B996 /* TransactionTableViewCell.swift */,
+			);
+			path = cutomsTableView;
+			sourceTree = "<group>";
+		};
+		D083CDA02FB4B6A8008F7ED0 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				D083CDA12FB4B774008F7ED0 /* DataTransaction.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D083CDA22FB4B774008F7ED0 /* DataTransaction.swift in Sources */,
+				D034B00C2FB5F0C500E0B996 /* TransactionTableViewCell.swift in Sources */,
 				D01B08F92FAEB61600B09649 /* ViewController.swift in Sources */,
+				D08981D52FB7FCC00062418D /* AddTransactionViewController.swift in Sources */,
 				D01B08F52FAEB61600B09649 /* AppDelegate.swift in Sources */,
 				D01B08F72FAEB61600B09649 /* SceneDelegate.swift in Sources */,
 			);
